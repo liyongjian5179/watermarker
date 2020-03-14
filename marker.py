@@ -8,7 +8,7 @@ import math
 
 from PIL import Image, ImageFont, ImageDraw, ImageEnhance, ImageChops
 
-TTF_FONT = u'./font/青鸟华光简琥珀.ttf'
+TTF_FONT = u'./font/SourceHanSansCN-Normal.ttf'
 
 def add_mark(imagePath, mark, args):
     '''

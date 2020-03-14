@@ -5,7 +5,7 @@
 
 # usage
 
-需要PIL库 `pip install Pillow`
+需要PIL库 `pip install pillow==6.2.0  -i https://mirrors.aliyun.com/pypi/simple/`
 
 ```
 usage: marker.py [-h] [-f FILE] [-m MARK] [-o OUT] [-c COLOR] [-s SPACE]
@@ -25,10 +25,27 @@ optional arguments:
   --size SIZE           font size of text, default is 50
   --opacity OPACITY     opacity of watermarks, default is 0.15
 ```
+# 参考命令
+```bash
+python marker.py -f ./input -m 仅限XXX平台注册使用 -c "#232862" --opacity 0.3 --size 30
+```
 
-# 效果
-`python marker.py -f ./input/test.png -m 添加水印`
+# 命令参数
+```
+-f 参数，指定打水印的文件，如果你想打印整个文件夹，则输入该文件夹路径即可。
+-m 参数，指定水印内容。
+-o 参数，指定输出水印文件的位置，默认为output文件夹。
+-c 参数，指定水印的颜色，默认值为shi..啊不，黄色，#8B8B1B.
+-s 参数，指定水印与水印之间的空隙，默认值为75.
+-a 参数，指定水印的旋转角度，我们的例子中都是默认值30度。
+--size参数，指定水印文本字体大小，默认值为50。
+--opacity参数，指定透明度，默认为0.15，数值越小越透明。
+```
 
-![](https://github.com/2Dou/watermarker/raw/master/output/test.png)
-
+# 原图
+![身份证正面](./input/idcard.png)
+![身份证背面](./input/idcard_back.png)
+# 打码后
+![身份证正面](./output/idcard.png)
+![身份证背面](./output/idcard_back.png)
 
