@@ -45,7 +45,7 @@ python marker.py -f ./input -m 仅限XXX平台注册使用 -c "#232862" --opacit
 # 原图
 ![身份证正面](https://github.com/liyongjian5179/watermarker/raw/master/input/idcard.png)
 ![身份证背面](https://github.com/liyongjian5179/watermarker/raw/master/input/idcard_back.png)
-# 打码后
+# 打水印后
 ![身份证正面](https://github.com/liyongjian5179/watermarker/raw/master/output/idcard.png)
 ![身份证背面](https://github.com/liyongjian5179/watermarker/raw/master/output/idcard_back.png)
 
